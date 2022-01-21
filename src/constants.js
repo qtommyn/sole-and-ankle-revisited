@@ -19,13 +19,13 @@ export const WEIGHTS = {
 
 // For this example, I'm going desktop-first.
 const BREAKPOINTS = {
-  mobileMax: 37.5,
-  tabletMax: 59.375,
-  laptopMax: 81.25,
+  phone: 600,
+  tablet: 950,
+  laptop: 1300,
 };
 
-const QUERIES = {
-  mobileAndDown: `max-width: ${BREAKPOINTS.mobileMax}rem`,
-  tabletAndDown: `max-width: ${BREAKPOINTS.tabletMax}rem`,
-  laptopAndDown: `max-width: ${BREAKPOINTS.laptopMax}rem`,
+export const QUERIES = {
+  phoneAndSmaller: `(max-width: ${BREAKPOINTS.phone / 16}rem)`,
+  tabletAndSmaller: `(max-width: ${BREAKPOINTS.tablet / 16}rem)`,
+  laptopAndSmaller: `(max-width: ${BREAKPOINTS.laptop / 16}rem)`,
 };
